@@ -1,0 +1,8 @@
+/home/tai/startimoveis/bin/Debug/netcoreapp1.1/startimoveis.deps.json
+/home/tai/startimoveis/bin/Debug/netcoreapp1.1/startimoveis.runtimeconfig.json
+/home/tai/startimoveis/bin/Debug/netcoreapp1.1/startimoveis.runtimeconfig.dev.json
+/home/tai/startimoveis/bin/Debug/netcoreapp1.1/startimoveis.dll
+/home/tai/startimoveis/bin/Debug/netcoreapp1.1/startimoveis.pdb
+/home/tai/startimoveis/obj/Debug/netcoreapp1.1/startimoveis.AssemblyInfo.cs
+/home/tai/startimoveis/obj/Debug/netcoreapp1.1/startimoveis.dll
+/home/tai/startimoveis/obj/Debug/netcoreapp1.1/startimoveis.pdb

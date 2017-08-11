@@ -1,0 +1,95 @@
+@model startimoveis.Models.Apartment
+
+@{
+    ViewData["Title"] = "Delete";
+}
+
+<h2>Delete</h2>
+
+<h3>Are you sure you want to delete this?</h3>
+<div>
+    <h4>Apartment</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <input type="hidden" asp-for="ID" />
+        <dt>
+            @Html.DisplayNameFor(model => model.MaintenanceFees)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.MaintenanceFees)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.Title)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.Title)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.Price)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.Price)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.SuitesNumber)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.SuitesNumber)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.Size)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.Size)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.Cep)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.Cep)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.City)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.City)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.District)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.District)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.PhoneNumber)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.PhoneNumber)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.ParkingSpace)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.ParkingSpace)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.Leasing)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.Leasing)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.Sale)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.Sale)
+        </dd>
+    </dl>
+    
+    <form asp-action="Delete">
+        <div class="form-actions no-color">
+            <input type="submit" value="Delete" class="btn btn-default" /> |
+            <a asp-action="Index">Back to List</a>
+        </div>
+    </form>
+</div>

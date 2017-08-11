@@ -7,6 +7,8 @@ using Microsoft.AspNetCore.Hosting;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Logging;
+using Microsoft.EntityFrameworkCore;
+using startimoveis.Models;
 
 namespace startimoveis
 {
@@ -29,6 +31,10 @@ namespace startimoveis
         {
             // Add framework services.
             services.AddMvc();
+
+            services.AddDbContext<PropertyContext>(options => options.UseSqlite("Data Source=startimoveis.db"));
+            services.AddDbContext<HouseContext>(options => options.UseSqlite("Data Source=startimoveis.db"));
+            services.AddDbContext<ApartmentContext>(options => options.UseSqlite("Data Source=startimoveis.db"));
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
@@ -55,6 +61,8 @@ namespace startimoveis
                     name: "default",
                     template: "{controller=Home}/{action=Index}/{id?}");
             });
+
+            DBinitialize.EnsureCreated(app.ApplicationServices);
         }
     }
 }
